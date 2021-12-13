@@ -1,6 +1,5 @@
 package com.pieterjd.day02;
 
-import javafx.geometry.Pos;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

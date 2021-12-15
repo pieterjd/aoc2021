@@ -19,8 +19,15 @@ public class Crab {
     }
 
     public int getFuelCost(){
+        /*
+        for part 1
         return getNrOfStepChanges();
+        */
+        //for part 2, the sum of 1, 2, ...., getNrOfStepChanges
+        int n = getNrOfStepChanges();
+        return n*(n+1)/2;
     }
+
 
     public void moveToPosition(int position){
         nrOfStepChanges = Math.abs(getStartPosition()-position);

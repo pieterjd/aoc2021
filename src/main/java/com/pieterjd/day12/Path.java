@@ -62,6 +62,6 @@ public class Path {
     public String toString(){
         return caves.stream()
                 .map(c->c.getName())
-                .collect(Collectors.joining(" - "));
+                .collect(Collectors.joining(","));
     }
 }

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class Day12 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(
-                ClassLoader.class.getResourceAsStream("/day12-test.txt")
+                ClassLoader.class.getResourceAsStream("/day12.txt")
         ));
 
         CaveMap m =new CaveMap();
@@ -27,5 +27,9 @@ public class Day12 {
         PathFinder pf = new PathFinder(m);
         List<Path> allPaths = pf.findAllPaths();
         System.out.println(allPaths.size());
+        //part 2
+        List<Path> allPathsPart2 = pf.findAllPaths(2);
+        //System.out.println(allPathsPart2.stream().map(p-> p.toString()).collect(Collectors.joining("\n")));
+        System.out.println(allPathsPart2.size());
     }
 }
